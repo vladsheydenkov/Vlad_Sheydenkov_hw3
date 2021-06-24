@@ -5,6 +5,7 @@ This module provides functions for working with Dynamic Table scenario
 
 from base_page import BasePage
 from selenium.webdriver.common.by import By
+import allure
 
 
 class SearchLocators():
@@ -18,6 +19,7 @@ def find_cpu(list_with_elements):
             return f'Chrome CPU: {element}'
 
 
+@allure.feature('working with dynamic table')
 class DynamicTableHelper(BasePage):
 
     def find_chrome_cpu(self):

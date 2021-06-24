@@ -6,6 +6,7 @@ This module provides functions for working with Text Input scenario
 
 from base_page import BasePage
 from selenium.webdriver.common.by import By
+import allure
 
 
 class SearchLocators():
@@ -13,6 +14,7 @@ class SearchLocators():
     BUTTON = (By.ID, 'updatingButton')
 
 
+@allure.feature('text input page')
 class TextInputHelper(BasePage):
 
     def send_keys_to_updating_field(self, key):

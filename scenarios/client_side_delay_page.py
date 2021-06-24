@@ -5,8 +5,10 @@ This module provides functions for working with Client Side Delay scenario
 
 from base_page import BasePage
 from selenium.webdriver.common.by import By
+import allure
 
 
+@allure.feature('page with delay')
 class SearchLocators():
     AJAX_BUTTON = (By.ID, 'ajaxButton')
     APPEARED_TEXT = (By.CLASS_NAME, 'bg-success')

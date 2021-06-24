@@ -5,8 +5,10 @@ This module provides functions for working with Hidden Layers scenario
 
 from base_page import BasePage
 from selenium.webdriver.common.by import By
+import allure
 
 
+@allure.feature('hidden layer page')
 class SearchLocators():
     LOCATOR_GREEN_BUTTON = (By.ID, 'greenButton')
 
